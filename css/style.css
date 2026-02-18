@@ -1720,10 +1720,7 @@ section {
         font-size: 2rem;
     }
 
-    /* On mobile, hide video (autoplay unreliable), fallback poster shows */
-    .video-bg {
-        display: none;
-    }
+    /* Video stays visible on mobile — JS handles autoplay with poster fallback */
 
     .storefront-banner {
         height: 350px;
