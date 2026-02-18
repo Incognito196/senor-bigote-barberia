@@ -1,0 +1,22 @@
+# Original unprocessed media files (keep organized assets/ only)
+*.MOV
+*.heic
+*.HEIC
+IMG_*.jpg
+IMG_*.JPG
+!assets/images/**
+!assets/videos/**
+
+# UUID-named files
+[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]-*.JPG
+[0-9A-F][0-9A-F][0-9A-F][0-9A-F][0-9A-F][0-9A-F][0-9A-F][0-9A-F]-*.JPG
+[0-9A-F][0-9A-F][0-9A-F][0-9A-F][0-9A-F][0-9A-F][0-9A-F][0-9A-F]-*.PNG
+
+# Barber photos in root (copies exist in assets/)
+/Rafa.jpg
+/Luis.jpg
+/pito.jpg
+
+# Misc copies
+Copy of*
+*.DS_Store

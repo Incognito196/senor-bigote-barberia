@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senor Bigote Barberia | Premium Barbershop in Dyckman, NYC</title>
+    <meta name="description" content="Senor Bigote Barberia - A gentleman's barbershop on 113 Dyckman Street, NYC. Est. 2021. Premium cuts, fades, shaves & more. Book your barber today.">
+    <link rel="icon" type="image/png" href="assets/images/logos/logo-small.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <img src="assets/images/logos/logo-small.png" alt="Senor Bigote" class="preloader-logo">
+            <div class="preloader-bar"><div class="preloader-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/images/logos/logo-small.png" alt="Senor Bigote Barberia">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#barbers">Barbers</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#booking" class="nav-cta">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#barbers">Barbers</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#booking" class="nav-cta">Book Now</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <!-- Full-bleed portrait background -->
+        <div class="hero-bg">
+            <img src="assets/images/gallery/head-shave.jpg" alt="Gentleman with handlebar mustache at Se&ntilde;or Bigote Barberia">
+        </div>
+        <!-- Cinematic overlays -->
+        <div class="hero-overlay"></div>
+        <div class="hero-vignette"></div>
+
+        <div class="hero-content">
+            <div class="hero-top-line">
+                <span class="hero-line-accent"></span>
+                <span class="hero-badge">EST. 2021 &bull; Dyckman St, NYC</span>
+                <span class="hero-line-accent"></span>
+            </div>
+            <div class="hero-logo-wrap">
+                <img src="assets/images/logos/logo-main.png" alt="Se&ntilde;or Bigote Barberia" class="hero-logo">
+            </div>
+            <p class="hero-tagline">A Gentleman's Experience</p>
+            <div class="hero-cta-group">
+                <a href="#booking" class="btn btn-gold">Book Your Chair</a>
+                <a href="#barbers" class="btn btn-outline">Meet the Team</a>
+            </div>
+        </div>
+
+        <!-- Corner accents -->
+        <div class="hero-corner hero-corner-tl"></div>
+        <div class="hero-corner hero-corner-br"></div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images reveal-left">
+                    <div class="about-image-main">
+                        <img src="assets/images/gallery/razor-work.jpg" alt="Barber working on a client at Senor Bigote Barberia">
+                        <div class="about-image-accent"></div>
+                    </div>
+                    <div class="about-image-secondary">
+                        <img src="assets/images/gallery/fade-clean.jpg" alt="Clean fade result at Senor Bigote">
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">More Than a Barbershop.<br><span class="gold">A Brotherhood.</span></h2>
+                    <p>Since 2021, Senor Bigote Barberia has been the spot on Dyckman Street where gentlemen come for more than just a haircut. We built this shop to be a place where craft meets community &mdash; where every fade is precise, every shave is smooth, and every visit feels like coming home.</p>
+                    <p>With a team of skilled barbers who take pride in their art, we've become a cornerstone of the neighborhood. Whether you need a clean fade, a straight-razor shave, or just a good conversation, we've got you.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="5">0</span><span class="gold">+</span>
+                            <span class="stat-label">Years Strong</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="7">0</span>
+                            <span class="stat-label">Days a Week</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="100">0</span><span class="gold">%</span>
+                            <span class="stat-label">Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barbers Section -->
+    <section id="barbers">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">The Team</span>
+                <h2 class="section-title">Meet Your <span class="gold">Barbers</span></h2>
+                <p class="section-subtitle">Three craftsmen. One standard of excellence.</p>
+            </div>
+            <div class="barbers-grid">
+                <!-- Barber 1: Rafa -->
+                <div class="barber-card reveal">
+                    <div class="barber-image-wrap">
+                        <img src="assets/images/barbers/rafa.jpg" alt="Rafa - Barber at Senor Bigote">
+                        <div class="barber-overlay">
+                            <a href="#booking" class="btn btn-gold btn-sm" data-barber="rafa">Book with Rafa</a>
+                        </div>
+                    </div>
+                    <div class="barber-info">
+                        <h3>Rafa</h3>
+                        <p class="barber-title">Master Barber</p>
+                    </div>
+                </div>
+                <!-- Barber 2: Luis -->
+                <div class="barber-card reveal">
+                    <div class="barber-image-wrap">
+                        <img src="assets/images/barbers/luis.jpg" alt="Luis Champion - Barber at Senor Bigote">
+                        <div class="barber-overlay">
+                            <a href="#booking" class="btn btn-gold btn-sm" data-barber="luis">Book with Luis</a>
+                        </div>
+                    </div>
+                    <div class="barber-info">
+                        <h3>Luis <span class="gold">"Champion"</span></h3>
+                        <p class="barber-title">Senior Barber</p>
+                    </div>
+                </div>
+                <!-- Barber 3: Pito -->
+                <div class="barber-card reveal">
+                    <div class="barber-image-wrap">
+                        <img src="assets/images/barbers/pito.jpg" alt="Pito - Barber at Senor Bigote">
+                        <div class="barber-overlay">
+                            <a href="#booking" class="btn btn-gold btn-sm" data-barber="pito">Book with Pito</a>
+                        </div>
+                    </div>
+                    <div class="barber-info">
+                        <h3>Pito</h3>
+                        <p class="barber-title">Senior Barber</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Interlude -->
+    <section class="video-interlude">
+        <video autoplay muted loop playsinline poster="assets/videos/razor-poster.jpg" class="video-bg">
+            <source src="assets/videos/razor-closeup.mp4" type="video/mp4">
+        </video>
+        <img src="assets/videos/razor-poster.jpg" alt="" class="video-fallback" loading="lazy">
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <span class="section-label">The Craft</span>
+            <h2 class="section-title">Precision is <span class="gold">Everything</span></h2>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="services-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">What We Offer</span>
+                <h2 class="section-title">Our <span class="gold">Services</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 4C18.7 4 8 14.7 8 28c0 9.3 5.3 17.3 13 21.3V56c0 2.2 1.8 4 4 4h14c2.2 0 4-1.8 4-4v-6.7C50.7 45.3 56 37.3 56 28 56 14.7 45.3 4 32 4z" stroke="currentColor" stroke-width="2"/><path d="M24 36h16M28 44h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Haircut & Shave</h3>
+                    <p>The full gentleman's treatment. Precision cut paired with a hot-towel straight-razor shave.</p>
+                    <span class="service-price">$45</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8v48M44 8v48" stroke="currentColor" stroke-width="2"/><path d="M20 16h24M20 24h24M20 40h24M20 48h24" stroke="currentColor" stroke-width="2"/><rect x="16" y="4" width="32" height="56" rx="4" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>Haircut</h3>
+                    <p>Fades, tapers, textured crops, classic cuts &mdash; whatever your style, we perfect it.</p>
+                    <span class="service-price">$35</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="24" r="12" stroke="currentColor" stroke-width="2"/><path d="M20 36c0 8 5.4 14.7 12 14.7S44 44 44 36" stroke="currentColor" stroke-width="2"/><path d="M26 20c2-2 4-3 6-3s4 1 6 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Kids Haircut</h3>
+                    <p>Children under 10. Same precision, same attention to detail, in a welcoming environment.</p>
+                    <span class="service-price">$25</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 32L8 56h48l-8-24" stroke="currentColor" stroke-width="2"/><path d="M24 32V16c0-4.4 3.6-8 8-8s8 3.6 8 8v16" stroke="currentColor" stroke-width="2"/><line x1="20" y1="40" x2="44" y2="40" stroke="currentColor" stroke-width="2"/><line x1="22" y1="48" x2="42" y2="48" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>Shape Up & Shave</h3>
+                    <p>Clean edges, sharp lines, and a smooth shave. Walk in scruffy, walk out sharp.</p>
+                    <span class="service-price">$25</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="12" y="8" width="8" height="48" rx="4" stroke="currentColor" stroke-width="2"/><path d="M20 32h24l4-8v16l-4-8" stroke="currentColor" stroke-width="2"/><rect x="44" y="24" width="8" height="16" rx="2" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>Shave</h3>
+                    <p>Traditional straight-razor shave with hot towel. The closest, smoothest shave you'll ever get.</p>
+                    <span class="service-price">$20</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 28c4-8 10-12 16-12s12 4 16 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M18 26c3-6 8-10 14-10s11 4 14 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><circle cx="32" cy="40" r="4" stroke="currentColor" stroke-width="2"/><path d="M28 40h-8M36 40h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Eyebrows</h3>
+                    <p>Clean, defined brows that frame your face right. Quick, precise, and always on point.</p>
+                    <span class="service-price">$10</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title">The <span class="gold">Gallery</span></h2>
+                <p class="section-subtitle">Every cut tells a story. Here are some of ours.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal" data-size="tall">
+                    <img src="assets/images/gallery/tuxedo-gentleman.jpg" alt="Gentleman in tuxedo with sharp fade and beard" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/images/gallery/fade-clean.jpg" alt="Clean fade haircut" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/images/gallery/curly-fade.jpg" alt="Curly textured fade" loading="lazy">
+                </div>
+                <div class="gallery-item reveal" data-size="tall">
+                    <img src="assets/images/gallery/wavy-texture.jpg" alt="Wavy textured fade" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/images/gallery/sharp-fade.jpg" alt="Sharp fade with beard" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/images/gallery/locs-before-after.jpg" alt="Locs with beard lineup before and after" loading="lazy">
+                </div>
+                <div class="gallery-item reveal" data-size="tall">
+                    <img src="assets/images/gallery/textured-crop.jpg" alt="Textured crop haircut" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/images/gallery/slick-sidepart.jpg" alt="Slick side part" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/images/gallery/braids-lineup.jpg" alt="Braids with sharp lineup" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/images/gallery/before-after.jpg" alt="Before and after beard lineup" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/images/gallery/razor-work.jpg" alt="Precision razor work" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/images/gallery/head-shave.jpg" alt="Head shave detail work" loading="lazy">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/images/gallery/classic-cut.jpg" alt="Classic haircut" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous">&lsaquo;</button>
+        <button class="lightbox-next" aria-label="Next">&rsaquo;</button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <!-- Booking Section -->
+    <section id="booking">
+        <div class="container">
+            <div class="booking-wrap">
+                <div class="booking-info reveal-left">
+                    <span class="section-label">Reserve Your Spot</span>
+                    <h2 class="section-title">Book Your <span class="gold">Chair</span></h2>
+                    <p>Pick your barber, choose your service, and request your time. Once we confirm via WhatsApp, you're locked in &mdash; no waiting, no surprises.</p>
+                    <div class="booking-notice">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <span>Appointments aren't confirmed until we reply. We'll get back to you ASAP!</span>
+                    </div>
+                    <div class="booking-details">
+                        <div class="booking-detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <div>
+                                <strong>Location</strong>
+                                <span>113 Dyckman Street, New York, NY 10040</span>
+                            </div>
+                        </div>
+                        <div class="booking-detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            <div>
+                                <strong>Hours</strong>
+                                <span>Mon-Thu: 10:30AM - 9PM &bull; Fri-Sat: 9:30AM - 10PM &bull; Sun: 12PM - 8PM</span>
+                            </div>
+                        </div>
+                        <div class="booking-detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <div>
+                                <strong>WhatsApp / Phone</strong>
+                                <a href="https://wa.me/13472803188" target="_blank" rel="noopener" class="whatsapp-link">(347) 280-3188</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form-wrap reveal-right">
+                    <form id="bookingForm" class="booking-form">
+                        <h3>Request an Appointment</h3>
+                        <div class="form-group">
+                            <label for="clientName">Your Name</label>
+                            <input type="text" id="clientName" name="clientName" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="clientPhone">Phone Number</label>
+                            <input type="tel" id="clientPhone" name="clientPhone" required placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="barberSelect">Choose Your Barber</label>
+                            <select id="barberSelect" name="barber" required>
+                                <option value="">Select a barber</option>
+                                <option value="rafa">Rafa</option>
+                                <option value="luis">Luis "Champion"</option>
+                                <option value="pito">Pito</option>
+                                <option value="any">No preference</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceSelect">Service</label>
+                            <select id="serviceSelect" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="haircut-shave">Haircut & Shave - $45</option>
+                                <option value="haircut">Haircut - $35</option>
+                                <option value="kids-haircut">Kids Haircut (Under 10) - $25</option>
+                                <option value="shapeup-shave">Shape Up & Shave - $25</option>
+                                <option value="shave">Shave - $20</option>
+                                <option value="eyebrows">Eyebrows - $10</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="prefDate">Preferred Date</label>
+                                <input type="date" id="prefDate" name="preferredDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="prefTime">Preferred Time</label>
+                                <select id="prefTime" name="preferredTime" required>
+                                    <option value="">Select time</option>
+                                    <option value="9:30 AM">9:30 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="10:30 AM">10:30 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="11:30 AM">11:30 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="12:30 PM">12:30 PM</option>
+                                    <option value="1:00 PM">1:00 PM</option>
+                                    <option value="1:30 PM">1:30 PM</option>
+                                    <option value="2:00 PM">2:00 PM</option>
+                                    <option value="2:30 PM">2:30 PM</option>
+                                    <option value="3:00 PM">3:00 PM</option>
+                                    <option value="3:30 PM">3:30 PM</option>
+                                    <option value="4:00 PM">4:00 PM</option>
+                                    <option value="4:30 PM">4:30 PM</option>
+                                    <option value="5:00 PM">5:00 PM</option>
+                                    <option value="5:30 PM">5:30 PM</option>
+                                    <option value="6:00 PM">6:00 PM</option>
+                                    <option value="6:30 PM">6:30 PM</option>
+                                    <option value="7:00 PM">7:00 PM</option>
+                                    <option value="7:30 PM">7:30 PM</option>
+                                    <option value="8:00 PM">8:00 PM</option>
+                                    <option value="8:30 PM">8:30 PM</option>
+                                    <option value="9:00 PM">9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-full">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Book via WhatsApp
+                        </button>
+                        <p class="form-note">Opens WhatsApp with your booking details. Just hit send!</p>
+                    </form>
+                    <div class="booking-success" id="bookingSuccess">
+                        <div class="success-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </div>
+                        <h3>Almost There!</h3>
+                        <p>A WhatsApp message was prepared with your booking details. Hit <strong>send</strong> in WhatsApp to submit your request.</p>
+                        <p class="success-note">This is a <strong>request</strong>, not a confirmed appointment. We'll reply in WhatsApp to confirm your spot. If the time isn't available, we'll work with you to find one that is.</p>
+                        <button class="btn btn-outline" id="bookAnother">Book Another</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="location">
+        <div class="storefront-banner">
+            <img src="assets/images/shop/storefront-day.jpg" alt="Señor Bigote Barberia storefront on 113 Dyckman Street" loading="lazy">
+            <div class="storefront-overlay">
+                <h2 class="section-title">Find Us on <span class="gold">Dyckman</span></h2>
+                <p>113 Dyckman Street, New York, NY 10040</p>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.5!2d-73.927!3d40.867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s113+Dyckman+St%2C+New+York%2C+NY+10040!5e0!3m2!1sen!2sus!4v1"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Senor Bigote Barberia Location">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-bg">
+            <img src="assets/images/shop/storefront-night.jpg" alt="" loading="lazy">
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logos/logo-main.png" alt="Senor Bigote Barberia" class="footer-logo">
+                    <p>A gentleman's experience since 2021.</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#barbers">Barbers</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Visit Us</h4>
+                    <p>113 Dyckman Street<br>New York, NY 10040</p>
+                    <p>Mon-Thu: 10:30AM - 9PM<br>Fri-Sat: 9:30AM - 10PM<br>Sun: 12PM - 8PM</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Connect</h4>
+                    <p><a href="https://wa.me/13472803188" target="_blank" rel="noopener" class="whatsapp-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 6px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        (347) 280-3188
+                    </a></p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/senor_bigote_barberia/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@senorbigotebarberia" target="_blank" rel="noopener" aria-label="TikTok" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Se&ntilde;or Bigote Barberia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Storefront Banner -->
+    <div class="bottom-storefront">
+        <img src="assets/images/shop/storefront-night.jpg" alt="Señor Bigote Barberia storefront at night" loading="lazy">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
