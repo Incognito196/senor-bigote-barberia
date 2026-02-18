@@ -382,26 +382,46 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Lazy Video Play (only when in viewport) ---
+    // --- Video Autoplay Handler ---
     const videos = document.querySelectorAll('.video-bg');
     const videoFallback = document.querySelector('.video-fallback');
 
-    const videoObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.play().catch(() => {
-                    // Autoplay failed (common on mobile) — show fallback image
+    videos.forEach(video => {
+        // Force muted (some browsers need this set via JS too)
+        video.muted = true;
+        video.setAttribute('muted', '');
+        video.setAttribute('playsinline', '');
+
+        // Try to play immediately
+        const tryPlay = () => {
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(() => {
+                    // Autoplay blocked — show fallback poster image
                     if (videoFallback) {
-                        entry.target.style.display = 'none';
                         videoFallback.style.display = 'block';
                     }
                 });
-            } else {
-                entry.target.pause();
             }
-        });
-    }, { threshold: 0.25 });
+        };
 
-    videos.forEach(video => videoObserver.observe(video));
+        // Try on load, and also when it enters viewport
+        if (video.readyState >= 2) {
+            tryPlay();
+        } else {
+            video.addEventListener('loadeddata', tryPlay, { once: true });
+        }
+
+        // Also try on first user interaction (scroll/touch/click)
+        const playOnInteraction = () => {
+            tryPlay();
+            document.removeEventListener('scroll', playOnInteraction);
+            document.removeEventListener('touchstart', playOnInteraction);
+            document.removeEventListener('click', playOnInteraction);
+        };
+        document.addEventListener('scroll', playOnInteraction, { passive: true });
+        document.addEventListener('touchstart', playOnInteraction, { passive: true });
+        document.addEventListener('click', playOnInteraction);
+    });
 
 });
